@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffcccb; /* Cambia el color de fondo según tu preferencia */
+}
+
+.Cabecera {
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+
+.Album, .Cartas, .Videos, .Musica {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Galeria img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para las imágenes */
+.imagen-movible {
+    width: 40%; /* Reduce el tamaño de las imágenes aún más para dispositivos móviles */
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Estilos para imágenes cuando se pasa el cursor */
+.imagen-movible:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para la galería de videos */
+.galeria-video {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajusta el tamaño de las columnas automáticamente */
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+}
+
+/* Estilos para cada video en la galería */
+.video-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc; /* Agrega un borde para separar los videos */
+}
+
+video {
+    max-width: 100%; /* Ajusta el ancho máximo de los videos al 100% del contenedor */
+}
+
+/* Estilos para el contenedor de videos si es necesario */
+
+
+
+.Musica audio {
+    width: 100%;
+}
+
+.Footer {
+    text-align: center;
+    background-color: #ffcccb;
+    padding: 10px;
+    color: #333;
+}
+
